@@ -1,8 +1,9 @@
 package com.HealthOn.model;
 
+import jakarta.persistence.Id;
 import lombok.*;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 @Entity
 @Getter
@@ -11,7 +12,8 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @Builder
 public class Prescription {
+    @Id
     private long prescriptionID;
-    private Appointment appointment;
+//    private Appointment appointment;
     private String prescriptions;
 }

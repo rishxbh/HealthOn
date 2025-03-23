@@ -1,12 +1,8 @@
 package com.HealthOn.model;
 
 import lombok.*;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.util.List;
+import jakarta.persistence.*;
 
 @Entity
 @NoArgsConstructor
@@ -16,14 +12,14 @@ import java.util.List;
 @Builder
 public class Doctor {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long doctorId;
-    private String name;
     private String email;
+    private String name;
     private String phoneNo;
     private String address;
     private String speciality;
-    private List<Long> appointmentHistory;
+    private String description;
+    private int experience;
+//    private List<Long> appointmentHistory;
     private String appointmentCost;
-    private Role role = Role.DOCTOR;
+//    private Role role = Role.DOCTOR;
 }

@@ -1,0 +1,27 @@
+2025-03-23 05:06:37.347436+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:12:01.545986+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:13:33.559853+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:16:42.224234+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:19:42.407237+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:22:04.988008+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:22:26.765653+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 05:24:22.095521+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]
+2025-03-23 13:53:06.218802+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email))"; expected "identifier"; SQL statement:
+create table user (email varchar(255) not null, password varchar(255), role tinyint check (role between 0 and 1), primary key (email)) [42001-232]

@@ -2,10 +2,7 @@ package com.HealthOn.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.*;
 import java.util.Date;
 
 @NoArgsConstructor
@@ -19,7 +16,7 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long blogId;
     private Date postedOn;
-    private Doctor doctor;
+//    private Doctor doctor;
     private String title;
     private String content;
 }
