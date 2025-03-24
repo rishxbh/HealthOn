@@ -1,6 +1,7 @@
 package com.HealthOn.service;
 
 import com.HealthOn.dto.request.DoctorDetailsDtoRequest;
+import com.HealthOn.dto.response.DoctorDtoResponse;
 import com.HealthOn.model.Doctor;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
@@ -13,4 +14,5 @@ public interface DoctorService {
     List<Doctor> getAllDoctors();
     List<Doctor> getByName(String name);
     Doctor saveDoctor(DoctorDetailsDtoRequest doctorDetailsDtoRequest);
+    DoctorDtoResponse getDoctorByEmailDto(String email);
 }

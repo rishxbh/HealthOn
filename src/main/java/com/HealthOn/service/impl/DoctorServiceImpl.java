@@ -1,13 +1,11 @@
 package com.HealthOn.service.impl;
 
 import com.HealthOn.dto.request.DoctorDetailsDtoRequest;
+import com.HealthOn.dto.response.DoctorDtoResponse;
 import com.HealthOn.model.Doctor;
 import com.HealthOn.repo.DoctorRepository;
 import com.HealthOn.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -57,6 +55,24 @@ public class DoctorServiceImpl implements DoctorService {
                 .speciality(request.getSpeciality())
                 .appointmentCost(request.getAppointmentCost()).build();
         return doctorRepository.save(doctor);
+    }
+
+    @Override
+    public DoctorDtoResponse getDoctorByEmailDto(String email) {
+        Optional<Doctor> result = doctorRepository.findById(email);
+        Doctor doctor = result.orElse(null);
+        if(doctor != null) {
+            DoctorDtoResponse response = new DoctorDtoResponse();
+            response.setEmail(doctor.getEmail());
+            response.setName(doctor.getName());
+            response.setAddress(doctor.getAddress());
+            response.setExperience(doctor.getExperience());
+            response.setDescription(doctor.getDescription());
+            response.setPhoneNo(response.getPhoneNo());
+            response.setSpeciality(response.getSpeciality());
+            return  response;
+        }
+        return null;
     }
 
 

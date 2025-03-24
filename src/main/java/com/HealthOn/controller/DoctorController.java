@@ -1,5 +1,6 @@
 package com.HealthOn.controller;
 
+import com.HealthOn.dto.response.DoctorDtoResponse;
 import com.HealthOn.model.Doctor;
 import com.HealthOn.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,4 +31,11 @@ public class DoctorController {
         List<Doctor> result = doctorService.getByName(name);
         return new ResponseEntity<>(result,HttpStatus.OK);
     }
+
+    @GetMapping("/{email}")
+    public ResponseEntity<DoctorDtoResponse> getDoctor(@PathVariable String email) {
+        DoctorDtoResponse response = doctorService.getDoctorByEmailDto(email);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
 }
