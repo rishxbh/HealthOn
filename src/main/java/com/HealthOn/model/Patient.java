@@ -17,7 +17,9 @@ public class Patient {
     private String name;
     private String phoneNo;
     private String address;
-//    private List<Appointment> appointmentList;
-//    private List<Prescription> prescriptionList;
-//    private Role role = Role.PATIENT;
+    @OneToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.DETACH})
+    private List<Appointment> appointmentList;
+    @OneToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.DETACH})
+    private List<Prescription> prescriptionList;
+    private Role role = Role.PATIENT;
 }

@@ -16,7 +16,9 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long blogId;
     private Date postedOn;
-//    private Doctor doctor;
+    @ManyToOne
+    @JoinColumn(name = "Doctor_id")
+    private Doctor doctor;
     private String title;
     private String content;
 }

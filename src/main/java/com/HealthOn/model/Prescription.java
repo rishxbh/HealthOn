@@ -1,6 +1,8 @@
 package com.HealthOn.model;
 
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import lombok.*;
 
 import jakarta.persistence.Entity;
@@ -14,6 +16,8 @@ import jakarta.persistence.Entity;
 public class Prescription {
     @Id
     private long prescriptionID;
-//    private Appointment appointment;
+    @OneToOne
+    @JoinColumn(name = "Appointment_id")
+    private Appointment appointment;
     private String prescriptions;
 }

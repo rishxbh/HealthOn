@@ -19,7 +19,10 @@ public class Doctor {
     private String speciality;
     private String description;
     private int experience;
-//    private List<Long> appointmentHistory;
+    @OneToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.DETACH})
+    private List<Appointment> appointmentHistory;
     private String appointmentCost;
-//    private Role role = Role.DOCTOR;
+    private Role role = Role.DOCTOR;
+    @OneToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.DETACH})
+    private List<Blog> blogs;
 }
