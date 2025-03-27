@@ -5,4 +5,5 @@ import com.HealthOn.model.Appointment;
 
 public interface AppointmentService {
     Appointment bookAppointment(AppointmentDetailsDtoRequest request);
+    Appointment cancelAppointment(Appointment appointment);
 }
